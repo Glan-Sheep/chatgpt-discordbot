@@ -1,7 +1,9 @@
-import { BotName } from "../bot.ts";
+import { ChatGPT } from "../bot.ts";
 import log from "utils/logger.ts";
 
 export async function updateAppcationCommands() {
-  await BotName.helpers.upsertGlobalApplicationCommands(BotName.commands.array());
-  log.info(BotName.commands.array());
+  await ChatGPT.helpers.upsertGlobalApplicationCommands(
+    ChatGPT.commands.array()
+  );
+  log.info(ChatGPT.commands.array());
 }

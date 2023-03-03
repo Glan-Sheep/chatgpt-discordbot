@@ -33,6 +33,6 @@ export interface BotClient extends BotWithCache<BotWithHelpersPlugin> {
   commands: Collection<string, Command>;
 }
 
-export const BotName = bot as BotClient;
+export const ChatGPT = bot as BotClient;
 
-BotName.commands = new Collection();
+ChatGPT.commands = new Collection();
